@@ -1,0 +1,85 @@
+/* J'ai spécifié une largeur maximale pour préserver la structure de la page */
+body{
+    max-width: 1100px; 
+    margin: auto;
+    border:1px solid #000;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+   
+}
+
+/* Entête du site */
+/* J'utilise flexbox pour placer 2 éléments côte à côte avec un espacement égal */
+
+.head-container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #AEE1F3;
+ }
+
+
+/* J'ai donné une taille à la photo pour que je puisse la positionner librement sur la page et qu'elle s'harmonise avec le reste de la page*/
+.photo{
+    width: 250px;
+    height: 250px;
+    padding: 0 0 0 0;
+    margin: 30px 70px 30px 70px;
+
+}
+
+ h2{
+    color: rgb(145, 145, 245);
+ }
+
+/* Côté gauche dans Header */
+/* Centrage de la liste et suppression des marqueurs de liste*/
+.coordone{
+    
+    margin: 30px;
+    row-gap: 5em;
+    padding-left: 60px;
+    text-align: center;
+}
+
+
+
+.list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+/* Partie principale du site */
+/* centrer tout le contenu sous l'en-tête du site */
+/* J'ai ajouté une marge pour les en-têtes h3 afin de séparer le contenu de la première section*/
+main{
+    text-align: center;
+}
+
+h3{
+    margin: 0 50px 0 50px;
+}
+  
+
+/* @media J'utilise pour positionner l'en-tête au milieu lors du changement de la largeur de l'écran */
+
+@media (max-width: 760px){
+    .head-container{
+    justify-content: center;
+    background-color: #AEE1F3;
+     
+}
+
+.coordone{
+    padding-left: 0px;
+    
+}
+
+.suostitle{
+    display: none;
+}
+}
